@@ -24,7 +24,7 @@ Usage: python sorf_to_genome.py <ORF file> <exon file>
 Args: <ORF file> = reformatted FASTA file of ORFs from getORF e.g. headers should look like this: >ENST00000456328.2 7 - 63 not >ENST00000456328.2_1 [7 - 63]
 
 <exon file> = contains exon sequence coordinates of transcripts ran through getORF columns (0 based numbering) 0:chromosome, 1:gene name, 2:transcript ID, 3:backsplice identifier, 4:strand, 5:exons (format start;stop,start;stop etc. )
-## upplementary steps
+## Supplementary steps
 
 To obtain open reading frames through EMBOSS getORF
 getorf  -sequence input_mRNA.fa -minsize 100  -outseq ORF.fa -table 1 -find 1 -noreverse -nomethionine
